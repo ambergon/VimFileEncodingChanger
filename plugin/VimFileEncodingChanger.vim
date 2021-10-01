@@ -9,9 +9,9 @@ command! -nargs=* -range EncodingCp932 call VimFileEncodingChanger#open(<line1>,
 
 
 function! VimFileEncodingChanger#open( ... ) abort
-    echo a:0
-    echo a:1
-    echo a:2
+    #echo a:0
+    #echo a:1
+    #echo a:2
     exec('python3 ' . 'encoding(' . a:1 . ',' . a:2 . ' )')
 endfunction
 
